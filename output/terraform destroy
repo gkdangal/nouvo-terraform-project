@@ -1,0 +1,72 @@
+$ terraform destroy 
+
+var.profile
+  Name of aws key pair
+
+  Enter a value: terraform
+
+aws_vpc.nuovovpc: Refreshing state... (ID: vpc-0c52b377)
+aws_subnet.private-nuovo-subnet3: Refreshing state... (ID: subnet-8087fbaf)
+aws_internet_gateway.nuovo-gateway: Refreshing state... (ID: igw-5f554226)
+aws_subnet.Public-Nuovo-Subnet1: Refreshing state... (ID: subnet-f590e0a8)
+aws_subnet.private-nuovo-subnet1: Refreshing state... (ID: subnet-14abdb49)
+aws_subnet.public-nuovo-subnet2: Refreshing state... (ID: subnet-4d517f29)
+aws_subnet.public-nuovo-subnet3: Refreshing state... (ID: subnet-ae84f881)
+aws_subnet.private-nuovo-subnet2: Refreshing state... (ID: subnet-ec517f88)
+aws_route.nuovo-internet-access: Refreshing state... (ID: r-rtb-9d9191e01080289494)
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  - aws_internet_gateway.nuovo-gateway
+
+  - aws_route.nuovo-internet-access
+
+  - aws_subnet.Public-Nuovo-Subnet1
+
+  - aws_subnet.private-nuovo-subnet1
+
+  - aws_subnet.private-nuovo-subnet2
+
+  - aws_subnet.private-nuovo-subnet3
+
+  - aws_subnet.public-nuovo-subnet2
+
+  - aws_subnet.public-nuovo-subnet3
+
+  - aws_vpc.nuovovpc
+
+
+Plan: 0 to add, 0 to change, 9 to destroy.
+
+Do you really want to destroy?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_route.nuovo-internet-access: Destroying... (ID: r-rtb-9d9191e01080289494)
+aws_subnet.public-nuovo-subnet2: Destroying... (ID: subnet-4d517f29)
+aws_subnet.private-nuovo-subnet2: Destroying... (ID: subnet-ec517f88)
+aws_subnet.Public-Nuovo-Subnet1: Destroying... (ID: subnet-f590e0a8)
+aws_subnet.private-nuovo-subnet1: Destroying... (ID: subnet-14abdb49)
+aws_subnet.public-nuovo-subnet3: Destroying... (ID: subnet-ae84f881)
+aws_subnet.private-nuovo-subnet3: Destroying... (ID: subnet-8087fbaf)
+aws_route.nuovo-internet-access: Destruction complete after 1s
+aws_subnet.Public-Nuovo-Subnet1: Destruction complete after 1s
+aws_subnet.public-nuovo-subnet2: Destruction complete after 1s
+aws_internet_gateway.nuovo-gateway: Destroying... (ID: igw-5f554226)
+aws_subnet.private-nuovo-subnet3: Destruction complete after 1s
+aws_subnet.private-nuovo-subnet2: Destruction complete after 1s
+aws_subnet.private-nuovo-subnet1: Destruction complete after 1s
+aws_subnet.public-nuovo-subnet3: Destruction complete after 1s
+aws_internet_gateway.nuovo-gateway: Still destroying... (ID: igw-5f554226, 10s elapsed)
+aws_internet_gateway.nuovo-gateway: Destruction complete after 11s
+aws_vpc.nuovovpc: Destroying... (ID: vpc-0c52b377)
+aws_vpc.nuovovpc: Destruction complete after 0s
+
+Destroy complete! Resources: 9 destroyed.
+

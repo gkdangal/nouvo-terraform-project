@@ -42,7 +42,11 @@ provider.aws v1.8.0
 <!-- -->
 $ terraform plan
 <!-- -->
+We have to specify our aws profile 
+<!-- -->
 $ terraform apply
+<!-- -->
+We have to specify our aws profile 
 <!-- -->
 Output files is included on Output folder
 <!-- -->
