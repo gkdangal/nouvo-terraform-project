@@ -1,5 +1,6 @@
-### Creating 3 private and 3 public subnet with one vpc
+***Creating three private and three public subnet using Terraform
 <!-- -->
+
 
 
 
