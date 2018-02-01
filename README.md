@@ -11,10 +11,11 @@ $ mv terraform /usr/local/bin
 <!-- -->
 ##### To test Terraform
 $ terraform -version 
-===
+<!-- -->
 Output will be like this
+<!-- -->
 Terraform v0.11.3
-
+<!-- -->
 ##### Setting AWS credentials 
 $ mkdir ~/.aws
 <!-- -->
@@ -23,17 +24,19 @@ $ vim ~/.aws/credentials
 <!-- -->
 [terraform]
 aws_access_key_id = Amazon-Access-Id-Here
+<!-- -->
 aws_secret_access_key = Amazon-Access-Key-Here
 <!-- -->
 ##### Download terrform git files 
 $ git clone https://github.com/gkdangal/nouvo-terraform-project.git
-###### Initialize the terraform to download aws plugin
+###### Initialize the terraform
 $ terraform init
 <!-- -->
 $ terraform -version
 <!-- -->
 Terraform v0.11.3
-+ provider.aws v1.8.0
+<!-- -->
+provider.aws v1.8.0
 <!-- -->
 ##### Test and Apply
 <!-- -->
